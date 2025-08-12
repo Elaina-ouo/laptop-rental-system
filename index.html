@@ -267,7 +267,9 @@
                             case '대여 완료': statusColorClass = 'text-green-400'; break;
                             case '반납 신청 완료': statusColorClass = 'text-orange-400'; break;
                             case '반납 완료': statusColorClass = 'text-blue-400'; break;
-                            case '신청 불가': statusColorClass = 'text-red-400'; break;
+                            case '대여 불가': statusColorClass = 'text-red-400'; break;
+                            case '대여 불가, 여유 기기 없음': statusColorClass = 'text-red-400'; break;
+                            case '동일 기기 중복, 다른 기기를 선택하세요': statusColorClass = 'text-red-400'; break;
                         }
                         
                         const formattedDate = new Date(row[1]).toLocaleString('ko-KR', {
